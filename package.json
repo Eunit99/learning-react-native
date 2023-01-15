@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && expo start",
-    "android": "SET NODE_OPTIONS=--openssl-legacy-provider && expo start --android",
-    "ios": "SET NODE_OPTIONS=--openssl-legacy-provider && expo start --ios",
-    "web": "SET NODE_OPTIONS=--openssl-legacy-provider && expo start --web"
+    "start": "SET NODE_OPTIONS=--max-old-space-size=8192 && SET NODE_OPTIONS=--openssl-legacy-provider && expo start",
+    "android": "SET NODE_OPTIONS=--max-old-space-size=8192 && SET NODE_OPTIONS=--openssl-legacy-provider && expo start --android",
+    "ios": "SET NODE_OPTIONS=--max-old-space-size=8192 && SET NODE_OPTIONS=--openssl-legacy-provider && expo start --ios",
+    "web": "SET NODE_OPTIONS=--max-old-space-size=8192 && SET NODE_OPTIONS=--openssl-legacy-provider && expo start --web"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
